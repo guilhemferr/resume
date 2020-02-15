@@ -23,6 +23,7 @@ module.exports = {
     ['Directing', '+++'],
     ['Literature', '++++'],
     ['Influence', '++++'],
+    ['Adrians', '+']
   ],
   plays: [
     {
