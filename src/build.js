@@ -14,6 +14,7 @@ fs.emptyDirSync(outputDir);
 
 // Copy assets
 fs.copySync(srcDir + '/assets', outputDir);
+fs.copySync(`${srcDir}/../node_modules/dom-i18n/dist`, `${outputDir}/js`)
 
 // Build HTML
 handlebars.registerHelper('markdown', markdownHelper);

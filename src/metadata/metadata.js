@@ -22,8 +22,7 @@ module.exports = {
     ['Writing', '++++'],
     ['Directing', '+++'],
     ['Literature', '++++'],
-    ['Influence', '++++'],
-    ['Adrians', '+']
+    ['Influence', '++++']
   ],
   plays: [
     {
@@ -66,5 +65,6 @@ Thousands of performances of my plays have been staged since the end of the 16th
 In 1593 and 1594, when the theatres were closed because of plague, I published two narrative poems on sexual themes, Venus and Adonis and The Rape of Lucrece. He dedicated them to Henry Wriothesley, Earl of Southampton.
 `
     }
-  ]
+  ],
+  language: 'en'
 };
