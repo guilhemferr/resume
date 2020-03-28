@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font: normal 13px/1.5 "Helvetica", sans-serif;
+    color: #777;
+    /* max-width:700px; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+code,
+pre {
+    font-size: 14px;
+    font-family: Monaco, Menlo, Consolas, 'Courier New', monospace!important;
+    border: 1px solid #ddd;
+    padding: .1rem .4rem;
+    border-radius: .2rem;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    -webkit-tab-size: 4
+}
+
+code {
+    background: #f8f8f8;
+    color: #e01e5a;
+    font-size: .70rem;
+    padding: 2px 3px 1px;
+    white-space: normal
+}
+
+b {
+    color: #000;
+}
+
+.section {
+    margin-left: 225px;
+}
+
+h1 {
+    color: #000;
+    text-transform: uppercase;
+    font: normal 20px/1.0 "Helvetica", sans-serif;
+}
+
+h2 {
+    font: normal 13px/1.5 "Helvetica", sans-serif;
+}
+
+h2 a {
+    font-weight: normal;
+    color: #000;
+}
+
+.topquote {
+    margin-left: 0;
+    color: #b6493a;
+    font-style: normal;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font: normal 15px/1.0 "Helvetica", sans-serif;
+    color: #aaa;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h3:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -1px;
+    border-bottom: 1px solid #ddd;
+}
+
+.datespan {
+    color: #aaa;
+    margin-bottom: 2px;
+    font-size: 11px
+}
+
+.nospace {
+    word-spacing: -10px
+}
+
+.leadtext {
+    color: #b6493a;
+    font-weight: bold;
+}
+
+.tech {
+    font-weight: bold;
+}
+
+.shadowbottom {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.dropshadow {
+    box-shadow: 0 6px 10px -5px #777;
+    -webkit-box-shadow: 0 6px 10px -5px #777;
+    -moz-box-shadow: 0 6px 10px -5px #777;
+}
+
+.roundedcorner {
+    border-radius: 6px;
+    border: 1px solid #d1cfcf;
+}
+
+.imgwidth {
+    width: 180px;
+    margin-top: 3px;
+    margin-left: 16px;
+}
+
+.spaceleft {
+    left: -7px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.beforelist {
+    margin-bottom: 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#firebaseimg {
+    width: 46px;
+    margin-right: 15px;
+    margin-top: 100px;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+}
+
+.mr-3 {
+    max-width: 32%;
+}
+
+.mt-0 {
+    margin-bottom: 0px;
+}
+
+#contact-info a {
+    font: normal 12px/1.5 "Lato", sans-serif;
+    color: #777;
+}
+
+time {
+    font: normal 12px/1.5 "Lato", sans-serif;
+    color: #777;
+}
+
+.fa {
+    vertical-align: middle;
+}
+
+.list-unstyled .media {
+    margin-bottom: 2rem;
+}
+
+#city {
+    font: normal 12px/1.5 "Lato", sans-serif;
+    color: #777;
+}
+
+.img-padding-top {
+    padding-top: 1rem;
+    margin-right: unset !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .media {
+        display: block;
+    }
+    .mr-3 {
+        text-align: center;
+        display: contents;
+    }
+    .col-md-8 .mr-3 img {
+        max-width: 100px;
+    }
+    .media-body .mt-0 {
+        text-align: center;
+    }
+    .media-body h2 {
+        text-align: center;
+    }
+    .square {
+        height: unset;
+        width: unset;
+    }
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #goal {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        flex: none;
+        max-width: none;
+    }
+    #firebaseimg {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 990px) {
+    .col-md-8 {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #firebaseimg {
+        margin-top: 227px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #firebaseimg {
+        margin-top: 10px;
+        margin-right: 26px;
+    }
+}

@@ -1,27 +1,48 @@
 @media print {
     body {
-        font-size: 19px;
+        font-size: 18px;
+        color: #777;
+        background: #fff;
     }
-
     .screen {
         display: none;
     }
-
     .card {
         border: none;
     }
-
     .card-body {
         padding: 0;
     }
-
     .badge {
         border: 0.07rem solid #868e96;
     }
-
+    .badge-secondary,
     .badge-primary {
         color: inherit;
         background-color: inherit;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    #contact-info a {
+        font: normal 13px "Lato", sans-serif !important;
+        color: #777 !important;
+    }
+    #contact-info .fa {
+        color: #c5c5c5;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    #contact-2nd-row {
+        margin-top: -8px;
+    }
+    code {
+        font-size: 1rem;
+    }
+    #firebaseimg {
+        width: 50px;
+        margin-right: 1.5rem;
+        margin-top: 8rem;
     }
 }
 
@@ -29,30 +50,24 @@
     .print {
         display: none;
     }
-
     @media (min-width: 576px) {
         .page {
             margin-top: 10px;
             margin-bottom: 10px;
-            box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.75);
+            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.75);
             position: relative;
             padding: 32px;
         }
     }
-
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
         font-weight: 300;
     }
-
-    h2 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-
     dt {
         font-weight: normal;
     }
-
     strong {
         font-weight: 500;
     }
@@ -73,57 +88,46 @@ a .fa {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
     }
-
     .col-print-2 {
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
     }
-
     .col-print-3 {
         flex: 0 0 25%;
         max-width: 25%;
     }
-
     .col-print-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
     }
-
     .col-print-5 {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
     }
-
     .col-print-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
-
     .col-print-7 {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
     }
-
     .col-print-8 {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
     }
-
     .col-print-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
-
     .col-print-10 {
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
     }
-
     .col-print-11 {
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
     }
-
     .col-print-12 {
         flex: 0 0 100%;
         max-width: 100%;
