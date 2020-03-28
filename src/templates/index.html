@@ -5,145 +5,363 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is my CV">
+    <meta name="description" content="{{ name }} CV">
     <title>{{ name }}</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <body>
-
-    <main class="wrapper clearfix screen d-flex align-items-end flex-column">
+    <main class="wrapper clearfix d-flex align-items-end flex-column">
         <div class="sidebar" style="margin: 10px">
-            <nav id="nav">
+            <nav id="nav" class="screen">
                 <a href="#" title="Change current language to English" data-lang-ref="en">English</a>
+                <span>|</span>
                 <a href="#" title="Remplacer les textes par leur version en Français" data-lang-ref="fr">Français</a>
+                <span>|</span>
                 <a href="#" title="Alterar o idioma atual para Português" data-lang-ref="pt">Português</a>
             </nav>
         </div>
     </main>
-
     <div class="container page">
-        <div class="row">
-            <div class="col-md-6 col-print-6">
-                <h1>{{ name }}<br />{{ title }}</h1>
-                <p>
-                    <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-print-8">
+                <div class="media">
+                    <div class="square mr-3">
+                        <img src="img/profile.png" alt="profile image">
+                    </div>
+                    <div class="media-body ">
+                        <h1 class="mt-0 ">{{ name }}</h1>
+                        <h2 style="margin-top: -2px">
+                            <a href="https://gferr.github.io/resume">
+                                <span class="print">https://gferr.github.io/resume</span>
+                                <span class="screen">gferr.github.io/resume</span>
+                            </a>
+                        </h2>
+                        <div id="contact-info" class="pt-2">
+                            <div id="contact-1st-row" class="row">
+                                <div class="col pr-0">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    <a href="https://www.linkedin.com/in/gf3rr3ira" target="_blank">
+                                        <span class="print">https://www.linkedin.com/in/gf3rr3ira</span>
+                                        <span class="screen">linkedin.com/in/gf3rr3ira</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                    <a href="tel:+33766275040">
+                                        <span class="print">07 66 27 50 40</span>
+                                        <span class="screen">07 66 27 50 40</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="contact-2nd-row" class="row">
+                                <div class="col pr-0">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                    <a href="https://github.com/gferr">
+                                        <span class="print">https://github.com/gferr</span>
+                                        <span class="screen">github.com/gferr</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    <a href="mailto:guilhermef18+cv@gmail.com?subject=Demande%20inscription%20newsletter&body=Inscrivez-moi%20%C3%A0%20votre%20newsletter%20%21%0D%0A%0D%0ANom%20complet%20%3A%0D%0A%0D%0AO%C3%B9%20avez-vous%20entendu%20parler%20de%20nous%20%3F">
+                                        <span class="print">guilhermef18@gmail.com</span>
+                                        <span class="screen">guilhermef18</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="print row">
+                                <div class="col">
+                                    <p>
+                                        <p data-translatable>
+                                            <span>
+                                                <i class="fa  fa-pencil-square" aria-hidden="true "></i>
+                                                <time datetime="{{ buildinfo.date }} " class="text-muted ">
+                                                    <span>Updated at {{ updated }}</span>
+                                            </time>
+                                            </span>
+                                            <span>
+                                                <i class="fa  fa-pencil-square" aria-hidden="true "></i>
+                                                <time datetime="{{ buildinfo.date }} " class="text-muted ">
+                                                    <span>Mise à jour le {{ updated }}</span>
+                                            </time>
+                                            </span>
+                                            <span>
+                                                <i class="fa  fa-pencil-square" aria-hidden="true "></i>
+                                                <time datetime="{{ buildinfo.date }} " class="text-muted ">
+                                                    <span>Atualizado em {{ updated }}</span>
+                                            </time>
+                                            </span>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col pr-0">
+                                    <p>
+                                        <p data-translatable>
+                                            <span class="screen">
+                                                <i class="fa fa-file-pdf-o " aria-hidden="true "></i>
+                                                <a href="{{ pdf.en }} ">
+                                                    <span>Download PDF</span>
+                                            </a>
+                                            </span>
+                                            <span class="screen">
+                                                <i class="fa fa-file-pdf-o " aria-hidden="true "></i>
+                                                <a href="{{ pdf.fr }} ">
+                                                    <span>Téléchargez PDF</span>
+                                            </a>
+                                            </span>
+                                            <span class="screen">
+                                                <i class="fa fa-file-pdf-o " aria-hidden="true "></i>
+                                                <a href="{{ pdf.pt }} ">
+                                                    <span>Descarregar PDF</span>
+                                            </a>
+                                            </span>
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="screen col">
+                                    <p>
+                                        <p data-translatable>
+                                            <span>
+                                                <i class="fa  fa-pencil-square" aria-hidden="true "></i>
+                                                <time datetime="{{ buildinfo.date }} " class="text-muted ">
+                                                    <span>Updated at {{ updated }}</span>
+                                            </time>
+                                            </span>
+                                            <span>
+                                                <i class="fa  fa-pencil-square" aria-hidden="true "></i>
+                                                <time datetime="{{ buildinfo.date }} " class="text-muted ">
+                                                    <span>Mise à jour le {{ updated }}</span>
+                                            </time>
+                                            </span>
+                                            <span>
+                                                <i class="fa  fa-pencil-square" aria-hidden="true "></i>
+                                                <time datetime="{{ buildinfo.date }} " class="text-muted ">
+                                                    <span>Atualizado em {{ updated }}</span>
+                                            </time>
+                                            </span>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h3 class="mt-2rem">Goal</h3>
+        <div class="row justify-content-end">
+            <div id="goal" class="col-8 pl-2 pr-3">
+                <p>I intend to help developer teams to deliver <b>high-quality</b> products that add <b>value</b> to the customer.
                 </p>
-                <p>
-                    <p data-translatable>
-                        <span class="screen"><a href="{{ pdf.en }}">
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                            Download PDF version</a>
-                        </span>
-                        <span class="screen"><a href="{{ pdf.fr }}">
-                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                                Téléchargez la version PDF</a>
-                        </span>
-                        <span class="screen"><a href="{{ pdf.pt }}">
-                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                                    Descaregar versão PDF</a>
-                        </span>
+            </div>
+        </div>
+
+
+        <h3>Selected Work</h3>
+
+
+        <ul class="list-unstyled">
+
+            <!-- beorn -->
+            <li class="media">
+                <div class="mr-3 img-padding-top">
+                    <img src="img/tmpe.jpg" alt="Generic placeholder image">
+                </div>
+                <div class="media-body" style="padding-right: 1rem">
+                    <div class="datespan">Oct 2018 &mdash; </div>
+                    <p><a href="https://www.beorntech.com/" class="leadtext" target="_blank">Beorn Technologies</a>
+                        <i class="datespan">(Toulouse)</i> &nbsp; Managed teams as a <b style="white-space: nowrap;">tech lead</b>. Worked in a
+                        <span style="white-space: nowrap">full-stack</span> mode helped to define the project roadmap, deadlines, and deliveries. Constantly pushing for quality, favoring the best practices and focusing on code reviews.
                     </p>
-                    <span class="print">
-                        The online version is available at
-                        <a href="{{ baseUrl }}" class="text-nowrap">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            {{ baseUrl }}</a>
-                    </span>
-                </p>
-            </div>
-            <div class="col-md-6 col-print-6">
-                <dl class="row">
-                    {{#each facts}}
-                    <dt class="col-md-3">{{ @key }}</dt>
-                    <dd class="col-md-9">{{{ this }}}</dd>
-                    {{/each}}
-                </dl>
-            </div>
-        </div>
-
-        <h3 class="screen">Skills</h3>
-        <div class="row mb-4">
-            {{#each skills}}
-            <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
-                <small>{{ this.[0] }}</small>
-            </div>
-            <div class="col-print-1 col-3 col-md-2 col-lg-1">
-                {{ this.[1] }}
-            </div>
-            {{/each}}
-        </div>
-
-
-        <p data-translatable>
-            <span>
-                English poet, playwright and actor, widely regarded as the greatest writer in the English language
-                and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-                My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-                two long narrative poems and a few other verses, some of uncertain authorship.</span>
-            <span>texte en Francais</span>
-            <span>texto em Português</span>
-        </p>
-
-        <h2>Plays and work</h2>
-        {{#each plays}}
-        <div class="card mb-4">
-            <div class="card-body">
-                <h3>{{ title }}</h3>
-                <p class="text-muted">{{ written }}</p>
-
-                {{{markdown contents }}}
-
-                <div>
-                    {{#each badges }}
-                    <span class="badge badge-primary">{{ this }}</span>
-                    {{/each}}
+                    <p>
+                        Developed <b>Portail Emploi</b> &ndash; a job portal for Toulouse Metropole where users can search and apply for job offers. It integrates with external services such as Pole Emploi and provides CMS functionalities through Liferay
+                        Portal.
+                    </p>
+                    <p>
+                        Among other roles, I actively worked in DevOps improving the company's PaaS. Setup ci/cd pipeline, Nexus repositories, and Sonar Qube statistics. I joined several interviews and tutoring internships.
+                    </p>
+                    <p><span class="tech">Technologies.</span>
+                        <span class="badge badge-secondary">Liferay 7.x</span>
+                        <span class="badge badge-secondary">Springboot</span>
+                        <span class="badge badge-secondary">Java 8</span>
+                        <span class="badge badge-secondary">React</span>
+                        <span class="badge badge-secondary">Redux</span>
+                    </p>
                 </div>
-            </div>
-        </div>
-        {{/each}}
+            </li>
 
-        <h2>Education</h2>
-        <p>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</p>
-
-        <h2>Additional experience</h2>
-
-        {{#each experience}}
-        <div class="card mt-4">
-            <div class="card-body">
-                <div class="mb-2"><strong>{{ header }}</strong></div>
-
-                {{{markdown contents }}}
-
-                <div>
-                    {{#each skills }}
-                    <span class="badge badge-primary">{{ this }}</span>
-                    {{/each}}
+            <!-- MB.io -->
+            <li class="media">
+                <div class="mr-3 img-padding-top" style="text-align:right">
+                    <img src="img/td-400.png" alt="Test drive application">
+                    <img id="firebaseimg" src="img/fb1.png">
                 </div>
-            </div>
-        </div>
-        {{/each}}
+                <div class="media-body" style="padding-right: 1rem">
+
+                    <div class="datespan">2017 &mdash; 2018</div>
+                    <p><a href="https://www.mercedes-benz.de/" class="leadtext" target="_blank">Mercedes-Benz.io</a>
+                        <i class="datespan">(Lisbon / Stuttgart)</i> &nbsp; Helped to found <span style="white-space: nowrap">Mercedes-Benz.io</span> in Lisbon. Contributed to defining the recruitment process. I reviewed the applicants' code and participated
+                        in several interviews.
+                    </p>
+                    <p>Maintained and evolved the <a href="https://www.mercedes-benz.de/content/germany/de/passengercars/mercedes-benz-cars/test-drive.html#/model">
+                            Test Drive Application</a>. Implemented fault tolerance and asynchronous processing. Reduced the page loading time from <code>2.5s</code> <i>(sometimes up to <code>10s</code>)</i> to
+                        <code>1s</code> by using a cache mechanism.</p>
+
+                    <p>I managed the releases, launching new versions every two weeks. Automated the deploys by implemented the <code>ci/cd</code> pipeline. Rolled out into more than <code>25</code> countries. Routinely presented the application evolutions
+                        and the roadmap to the
+                        <span style="white-space: nowrap">top-level</span> management.
+                    </p>
+
+                    <p>Implemented from scratch a back-office application with similar features of <a href="https://firebase.google.com/docs/database/" target="_blank">Firebase Realtime
+                            Database</a></p>
+
+                    <p><span class="tech">Technologies.</span> Spring Boot, Java 8, Kotlin, RabbitMQ, Docker, Vue, Angular
+                    </p>
+                </div>
+            </li>
+
+
+
+            <!-- Xpand -->
+            <li class="media">
+                <div class="mr-3 img-padding-top">
+                    <img src="img/cfg-mobile-400.png">
+                </div>
+                <div class="media-body" style="padding-right: 1rem">
+                    <div class="datespan">2016 &mdash; 2017</div>
+
+                    <p><a href="https://www.commerzbank.de/portal/de/privatkunden/startseite.html" target="_blank" class="leadtext">Commerzbank
+                            Online Banking</a> <i class="datespan">(Lisbon / Frankfurt)</i> &nbsp; As a backend developer, I designed and implemented the enterprise service bus. Provided services such as login, show bank statements, send an email, upload
+                        documents, CashClick <i>(an immediate transfer between a credit card and account)</i>, among others.
+                    </p>
+
+                    <p>Integrated external services through well-defined contracts. Deployed the final product into the client infrastructure.
+                    </p>
+
+                    <p><span class="tech">Technologies.</span> Red Hat JBoss Fuse, SwitchYard, Apache Camel, WSDL, SOAP
+                    </p>
+                </div>
+            </li>
+
+            <!-- mtc -->
+            <li class="media">
+                <div class="mr-3 img-padding-top">
+                    <img src="img/ejbca10-bg.png">
+                </div>
+                <div class="media-body" style="padding-right: 1rem">
+                    <div class="datespan">2015 &mdash; 2016</div>
+
+                    <p><a href="https://www.ejbca.org/" class="leadtext">EJBCA redesign</a>
+                        <i class="datespan">(Lisbon)</i> &nbsp; Redesigned and reengineered the <a href="https://github.com/rgorosito/ejbca" target="_blank">
+                            Enterprise Java Bean Certificate Authority</a> <i>(PKI used by the first Portuguese Root
+                            CA)</i>.</p>
+
+                    <p>Upgraded the building tool <i>(from Apache Ant to Maven)</i> in a project with more than
+                        <code>37</code> modules and <code>322K</code> LOC. Added support for different application servers and databases. Implemented the front-end from scratch, added features such as CRL partitions, and audit logs.</p>
+
+                    <p>Reduced the time to generate a certificate from <code>4.5s</code> to <code>2.1s</code> by improving the lock mechanism.
+                    </p>
+
+                    <p><span class="tech">Technologies.</span> JEE 7, JSP, PrimeFaces, ShellScript, JMeter, Vagrant</p>
+
+                </div>
+            </li>
+            <!-- mtc -->
+            <li class="media">
+                <div class="mr-3 img-padding-top">
+                    <img src="img/mtc-landing-400.png">
+                </div>
+                <div class="media-body" style="padding-right: 1rem">
+                    <div class="datespan">2015</div>
+                    <p><a href="https://www.multicert.com/3ws/purchase?execution=e1s1" class="leadtext">Digital
+                            Certificate
+                            eCommerce</a> <i class="datespan">(Lisbon)</i>&nbsp; Adapted the web application to be used in physical stores (used by CTT <i>the Portuguese post office</i>).
+                    </p>
+
+                    <p>Updated the purchase flow, including the presentation and service layer. Optimized it for tablets and terminals.
+                    </p>
+
+                    <p>Implemented a hardware integration using the barcode <code>128</code> algorithm. The certificate price was printed out on barcode, then retrieved through the implemented web service.
+                    </p>
+
+                    <p><span class="tech">Technologies.</span> Java 7, Spring Web Flow, C, JSP, JBoss AS 7</p>
+
+                </div>
+            </li>
+
+            <li class="media">
+                <div class="mr-3 img-padding-top">
+                    <img src="img/rosetta.png">
+                </div>
+                <div class="media-body" style="padding-right: 1rem">
+                    <div class="datespan">2014 &mdash; 2015</div>
+                    <p><a href="http://web.ist.utl.pt/antonio.menezes.leitao/Rosetta/about/about.html" target="_blank" class="leadtext">Rosetta
+                            researcher fellow</a> <i class="datespan">(Lisbon)</i> &nbsp;
+                        <i>A European funded project</i> which aims to support the procedural creation of architectural models.
+                    </p>
+
+                    <p>Initiated, designed, prototyped and implemented several integrated tools used in the Rosetta programming environment. As an example, the <span style="font-weight: bold; white-space: nowrap;">sketch-correlation</span> tool which correlates
+                        image with code illustrating the intent of each piece of code.
+                    </p>
+                    <p><span class="tech">Technologies.</span> Racket (Lisp descendant language), DrRacket (IDE)</p>
+                </div>
+            </li>
+
+            <h3>Education</h3>
+
+            <li class="media">
+                <div class="mr-3 img-padding-top">
+                    <img src="img/ist.png">
+                </div>
+                <div class="media-body" style="padding-right: 1rem">
+
+
+                    <div class="datespan">2013 &mdash; 2015</div>
+                    <p><a href="https://tecnico.ulisboa.pt/en/" target="_blank" class="leadtext">IST.</a> MS in Information Systems and Computer Engineering.</p>
+
+                    <p>Thesis: <a href="https://fenix.tecnico.ulisboa.pt/cursos/meic-a/dissertacao/1691203502342197" target="_blank">
+                            An Enhanced Programming Environment for Generative Design</a>. Conducted a survey on the programming environment tools. I provided a theoretical foundation to select the programming tools more appropriate to write, document,
+                        and comprehend a program. Implemented and integrated these tools in a programming environment used in an architectural course (with more than <code>30</code> students).</p>
+
+                    <div class="datespan">2010 &mdash; 2013</div>
+                    <p><a href="https://tecnico.ulisboa.pt/en/" target="_blank" class="leadtext">IST.</a> BS in Information Systems and Computer Engineering.</p>
+
+                </div>
+            </li>
+
+        </ul>
     </div>
 
-    <script src="js/dom-i18n.min.js"></script>
+    <script src="js/dom-i18n.min.js "></script>
     <script>
         var i18n = domI18n({
             selector: '[data-translatable]',
             separator: ' // ',
             languages: ['en', 'fr', 'pt'],
             defaultLanguage: 'en',
-            currentLanguage: "{{ language }}"
+            currentLanguage: "{{ language }} "
         });
 
         var nav = Array.prototype.slice.call(document.querySelectorAll('#nav > a'));
 
-        nav.forEach(function (item) {
-            item.onclick = function (e) {
+        nav.forEach(function(item) {
+            item.onclick = function(e) {
                 i18n.changeLanguage(this.getAttribute('data-lang-ref'));
                 e.preventDefault();
             };
