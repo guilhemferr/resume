@@ -4,14 +4,18 @@
 }
 
 body {
-    background: #fff;
-    font: normal 13px/1.5 "Helvetica", sans-serif;
-    color: #777;
-    /* max-width:700px; */
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.67em;
+    letter-spacing: .006em;
+    font-family: brevtext, helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    padding: 0;
+    color: #3e3e3e;
+    text-align: justify;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code,
@@ -41,14 +45,54 @@ b {
     color: #000;
 }
 
+.tag {
+    display: inline-block;
+    border: 1px solid #dfe0e2;
+    border-radius: 5px;
+    background: #f8f8f8;
+    min-height: 18px;
+    padding: 0px 6px 0px;
+    cursor: default;
+    color: #767e8b;
+    box-sizing: border-box;
+    vertical-align: top;
+    min-height: 19px;
+    margin-right: 4px;
+    margin-top: 4px;
+    font-size: smaller;
+    line-height: 2em;
+    letter-spacing: .0001em;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.tag_ {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.company-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
 .section {
     margin-left: 225px;
 }
 
 h1 {
-    color: #000;
+    font-size: 22px;
+    line-height: 1em;
+    letter-spacing: -.025em;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-style: normal;
     text-transform: uppercase;
-    font: normal 20px/1.0 "Helvetica", sans-serif;
+    color: #000
 }
 
 h2 {
@@ -72,7 +116,7 @@ p {
 }
 
 h3 {
-    font: normal 15px/1.0 "Helvetica", sans-serif;
+    font: normal 16px/1.0 "Helvetica", sans-serif;
     color: #aaa;
     font-weight: 300;
     margin-bottom: 20px;
@@ -93,7 +137,22 @@ h3:before {
 .datespan {
     color: #aaa;
     margin-bottom: 2px;
-    font-size: 11px
+    font-size: 14.5px;
+    font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+.datespan span:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.datespan a {
+    vertical-align: baseline;
+    color: inherit;
+    font-weight: 600;
+}
+
+.datespan .fa {
+    vertical-align: baseline;
 }
 
 .nospace {
@@ -102,11 +161,15 @@ h3:before {
 
 .leadtext {
     color: #b6493a;
-    font-weight: bold;
+    font-family: grotesque, helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: none;
 }
 
 .tech {
     font-weight: bold;
+    margin-right: 4px;
 }
 
 .shadowbottom {
@@ -174,14 +237,24 @@ img {
     margin-bottom: 0px;
 }
 
+time,
 #contact-info a {
-    font: normal 12px/1.5 "Lato", sans-serif;
     color: #777;
+    font-size: 14.5px;
+    line-height: 1.2em;
+    letter-spacing: .001em;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
 }
 
-time {
-    font: normal 12px/1.5 "Lato", sans-serif;
-    color: #777;
+#contact-2nd-row {
+    line-height: 0;
+    margin-bottom: 10px;
 }
 
 .fa {
@@ -190,6 +263,19 @@ time {
 
 .list-unstyled .media {
     margin-bottom: 2rem;
+}
+
+#subtitle {
+    font-size: 14.5px;
+    line-height: 1.1em;
+    letter-spacing: .001em;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 2px;
 }
 
 #city {

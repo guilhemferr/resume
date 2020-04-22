@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "brevtext";
+    src: url("BreveText-Book.woff") format('woff');
+}
+
+@font-face {
+    font-family: "brandontext";
+    src: url("BrandonText-Bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "grotesque";
+    src: url("LabGrotesque-Black.woff") format('woff');
+}

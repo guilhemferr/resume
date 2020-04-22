@@ -24,9 +24,23 @@
     a {
         text-decoration: none !important;
     }
+    h1 {
+        font-weight: 300;
+    }
+    .container,
+    .page {
+        margin: 0;
+        padding: 0;
+    }
+    #subtitle {
+        margin-bottom: 0px;
+    }
+    #contact-info {
+        padding-top: 0;
+        color: #777;
+    }
     #contact-info a {
-        font: normal 13px "Lato", sans-serif !important;
-        color: #777 !important;
+        font-size: 13.5px;
     }
     #contact-info .fa {
         color: #c5c5c5;
@@ -34,7 +48,7 @@
         vertical-align: middle;
     }
     #contact-2nd-row {
-        margin-top: -8px;
+        margin-bottom: 5px;
     }
     code {
         font-size: 1rem;
