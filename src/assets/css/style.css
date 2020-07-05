@@ -13,7 +13,6 @@ body {
     text-transform: none;
     padding: 0;
     color: #3e3e3e;
-    text-align: justify;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -59,7 +58,7 @@ b {
     min-height: 19px;
     margin-right: 4px;
     margin-top: 4px;
-    font-size: smaller;
+    font-size: 12px;
     line-height: 2em;
     letter-spacing: .0001em;
     font-family: 'Open Sans', helvetica, sans-serif;
@@ -134,11 +133,36 @@ h3:before {
     border-bottom: 1px solid #ddd;
 }
 
+.datehead {
+    display: flex;
+    margin-top: 10px;
+}
+
+.datecolumn {
+    margin-bottom: 0 !important;
+    line-height: 0.7em !important;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aligner-item {
+    max-width: 65%;
+}
+
+.aligner-item-wide {
+    max-width: 80%;
+}
+
 .datespan {
     color: #aaa;
-    margin-bottom: 2px;
-    font-size: 14.5px;
+    font-size: 14px;
     font-family: 'Open Sans', helvetica, sans-serif;
+    line-height: 0em;
+    margin-bottom: -3px;
 }
 
 .datespan span:not(:last-child) {
@@ -220,8 +244,9 @@ img {
 
 #firebaseimg {
     width: 46px;
-    margin-right: 15px;
-    margin-top: 100px;
+    margin-left: -63px;
+    display: flex;
+    position: absolute;
 }
 
 .square {
@@ -289,6 +314,9 @@ time,
 }
 
 @media only screen and (max-width: 600px) {
+    .page {
+        padding: 1rem !important;
+    }
     .media {
         display: block;
     }
@@ -323,24 +351,20 @@ time,
     #firebaseimg {
         display: none;
     }
+    .company-info {
+        display: none;
+    }
+    .datespan .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0px;
+        line-height: 1em;
+    }
 }
 
 @media only screen and (min-width: 760px) and (max-width: 990px) {
     .col-md-8 {
         flex: 0 0 80%;
         max-width: 80%;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-    #firebaseimg {
-        margin-top: 227px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    #firebaseimg {
-        margin-top: 10px;
-        margin-right: 26px;
     }
 }
