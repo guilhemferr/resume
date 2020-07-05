@@ -3,6 +3,12 @@
         font-size: 18px;
         color: #777;
         background: #fff;
+        line-height: 1.2em;
+        text-align: justify;
+    }
+    .datecolumn {
+        margin-bottom: 0 !important;
+        line-height: 1.5em !important;
     }
     .screen {
         display: none;
@@ -20,6 +26,10 @@
     .badge-primary {
         color: inherit;
         background-color: inherit;
+    }
+    .datespan {
+        color: rgb(218, 218, 218);
+        margin-bottom: 1px;
     }
     a {
         text-decoration: none !important;
@@ -53,11 +63,6 @@
     code {
         font-size: 1rem;
     }
-    #firebaseimg {
-        width: 50px;
-        margin-right: 1.5rem;
-        margin-top: 8rem;
-    }
 }
 
 @media not print {
@@ -72,6 +77,9 @@
             position: relative;
             padding: 32px;
         }
+    }
+    .page {
+        padding: 4rem;
     }
     h1,
     h2,
