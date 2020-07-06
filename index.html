@@ -185,7 +185,7 @@
                             <span><i class="fa fa-at" aria-hidden="true" style="font-size: larger;"></i>&nbsp;<a
                                     href="https://www.beorntech.com/" target="_blank">Beorn Technologies</a></span>
                             <span title="Industry"><i class="fa fa-industry"
-                                    aria-hidden="true"></i>&nbsp;Consulting</span>
+                                    aria-hidden="true"></i>&nbsp;On-Demand</span>
                             <span><i class="fa fa-map-marker" style="font-size: large;"
                                     aria-hidden="true"></i>&nbsp;Toulouse</span>
                         </div>
@@ -225,10 +225,21 @@
                     <img src="img/td-400.png" alt="Test drive application">
                 </div>
                 <div class="media-body pr-3">
+                    <div class="datespan row">
+                        <div class="col-4">
+                            <span class="datehead">2017 &mdash; 2018</span>
+                        </div>
+                        <div class="col-8 company-info">
+                            <span><i class="fa fa-at" aria-hidden="true" style="font-size: larger;"></i>&nbsp;<a
+                                    href="https://www.mercedes-benz.de/" target="_blank">Mercedes-Benz.io</a></span>
+                            <span title="Industry"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp;Digital Media</span>
+                            <span><i class="fa fa-map-marker" style="font-size: large;"
+                                    aria-hidden="true"></i>&nbsp;Lisbon / Stuttgart</span>
+                        </div>
+                    </div>
 
-                    <div class="datespan">2017 &mdash; 2018</div>
                     <p><a href="https://www.mercedes-benz.de/" class="leadtext" target="_blank">Mercedes-Benz.io</a>
-                        <i class="datespan">(Lisbon / Stuttgart)</i> &nbsp; Helped to found <span
+                        Helped to found <span
                             style="white-space: nowrap">Mercedes-Benz.io</span> in Lisbon. Contributed to defining the
                         recruitment process. I reviewed the applicants' code and participated
                         in several interviews.
@@ -271,7 +282,7 @@
                         </div>
                         <div class="col-8 company-info">
                             <span><i class="fa fa-at" aria-hidden="true" style="font-size: larger;"></i>&nbsp;<a
-                                    href="https://www.multicert.com/" target="_blank">Xpand-IT</a></span>
+                                    href="https://www.xpand-it.com/" target="_blank">Xpand-IT</a></span>
                             <span title="Industry"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp;FinTech</span>
                             <span><i class="fa fa-map-marker" style="font-size: large;"
                                     aria-hidden="true"></i>&nbsp;Lisbon / Frankfurt</span>
@@ -279,20 +290,28 @@
                     </div>
 
                     <p><a href="https://www.commerzbank.de/portal/de/privatkunden/startseite.html" target="_blank"
-                            class="leadtext">Commerzbank
-                            Online Banking</a> As a backend
-                        developer, I designed and implemented the enterprise service bus. Provided services such as
-                        login, show bank statements, send an email, upload
-                        documents, CashClick <i>(an immediate transfer between a credit card and account)</i>, among
-                        others.
+                            class="leadtext">Commerzbank.</a> Designed and implemented the Enterprise Service Bus of a
+                        home banking application used by millions of users. Implemented operations like login, list
+                        statements, upload documents, among others.
                     </p>
 
-                    <p>Integrated external services through well-defined contracts. Deployed the final product into the
-                        client infrastructure.
+                    <p>
+                        Implemented a custom <a href="https://en.wikipedia.org/wiki/Two-phase_commit_protocol"
+                            target="_blank">two-phase commit protocol</a> to assure that operations like immediate
+                        transfers could be performed.
+
                     </p>
 
-                    <p><span class="tech">Technologies.</span> Red Hat JBoss Fuse, SwitchYard, Apache Camel, WSDL, SOAP
-                    </p>
+
+                    <div class="tag_">
+                        <span class="tech">Technologies.</span>
+                        <span class="tag">Red Hat JBoss Fuse</span>
+                        <span class="tag">SwitchYard</span>
+                        <span class="tag">Apache Camel</span>
+                        <span class="tag">WSDL</span>
+                        <span class="tag">SOAP</span>
+                    </div>
+
                 </div>
             </li>
 
@@ -312,28 +331,34 @@
                         <div class="col-8 company-info">
                             <span><i class="fa fa-at" aria-hidden="true" style="font-size: larger;"></i>&nbsp;<a
                                     href="https://www.multicert.com/" target="_blank">Multicert</a></span>
-                            <span title="Industry"><i class="fa fa-industry"
-                                    aria-hidden="true"></i>&nbsp;E-Commerce</span>
+                            <span title="Industry"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp;Cyber
+                                Security</span>
                             <span><i class="fa fa-map-marker" style="font-size: large;"
                                     aria-hidden="true"></i>&nbsp;Lisbon</span>
                         </div>
                     </div>
 
-                    <p><a href="https://www.ejbca.org/" class="leadtext">EJBCA redesign</a>
-                        Redesigned and reengineered the <a href="https://github.com/rgorosito/ejbca" target="_blank">
-                            Enterprise Java Bean Certificate Authority</a> <i>(PKI used by the first Portuguese Root
-                            CA)</i>.</p>
-
-                    <p>Upgraded the building tool <i>(from Apache Ant to Maven)</i> in a project with more than
-                        <code>37</code> modules and <code>322K</code> LOC. Added support for different application
-                        servers and databases. Implemented the front-end from scratch, added features such as CRL
-                        partitions, and audit logs.</p>
-
-                    <p>Reduced the time to generate a certificate from <code>4.5s</code> to <code>2.1s</code> by
-                        improving the lock mechanism.
+                    <p><a href="https://www.ejbca.org/" class="leadtext">Reengineered EJBCA</a> to be used as the first
+                        Portuguese Root Certification Authority. From <a href="https://github.com/rgorosito/ejbca"
+                            target="_blank">a project with more than 37 modules and 322K LOC</a>,
+                        I changed the building tool from Apache Ant to Maven. I ended with all errors caused during
+                        manual installation by automating it with scripts.
                     </p>
 
-                    <p><span class="tech">Technologies.</span> JEE 7, JSP, PrimeFaces, ShellScript, JMeter, Vagrant</p>
+                    <p>Redesigned the front-end using PrimeFaces, and reduced the time to generate a certificate from
+                        4.5s to 2.1s by improving the lock mechanism.
+                    </p>
+
+                    <div class="tag_">
+                        <span class="tech">Technologies.</span>
+                        <span class="tag">JEE 7</span>
+                        <span class="tag">JSP</span>
+                        <span class="tag">PrimeFaces</span>
+                        <span class="tag">ShellScript</span>
+                        <span class="tag">JMeter</span>
+                        <span class="tag">Vagrant</span>
+                    </div>
+                    </p>
 
                 </div>
             </li>
@@ -350,27 +375,31 @@
                         <div class="col-8 company-info">
                             <span><i class="fa fa-at" aria-hidden="true" style="font-size: larger;"></i>&nbsp;<a
                                     href="https://www.multicert.com/" target="_blank">Multicert</a></span>
-                            <span title="Industry"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp;Cyber
-                                Security</span>
+                            <span title="Industry"><i class="fa fa-industry"
+                                    aria-hidden="true"></i>&nbsp;E-Commerce</span>
                             <span><i class="fa fa-map-marker" style="font-size: large;"
                                     aria-hidden="true"></i>&nbsp;Lisbon</span>
                         </div>
                     </div>
-                    <p><a href="https://www.multicert.com/3ws/purchase?execution=e1s1" class="leadtext">Digital
-                            Certificate
-                            eCommerce</a> <i class="datespan">(Lisbon)</i>&nbsp; Adapted the web application to be used
-                        in physical stores (used by CTT <i>the Portuguese post office</i>).
+                    <p><a href="https://www.multicert.com/3ws/purchase?execution=e1s1" class="leadtext">Adapted a
+                            Digital Certificate eCommerce</a> for physical stores and deployed it at more than
+                        300 <a href="https://www.ctt.pt/" target="">CTT post office stores</a> all over Portugal.
                     </p>
 
-                    <p>Updated the purchase flow, including the presentation and service layer. Optimized it for tablets
-                        and terminals.
+                    <p>I optimized the UX/UI experience for tablets and terminals. I exposed a REST endpoint and
+                        integrated the barcode 128 algorithm, so the operators could use the scan to retrieve the
+                        certificate price.
                     </p>
 
-                    <p>Implemented a hardware integration using the barcode <code>128</code> algorithm. The certificate
-                        price was printed out on barcode, then retrieved through the implemented web service.
-                    </p>
-
-                    <p><span class="tech">Technologies.</span> Java 7, Spring Web Flow, C, JSP, JBoss AS 7</p>
+                    <div class="tag_">
+                        <span class="tech">Technologies.</span>
+                        <span class="tag">JEE 6</span>
+                        <span class="tag">Java 7</span>
+                        <span class="tag">Spring Web Flow</span>
+                        <span class="tag">JSP</span>
+                        <span class="tag">C</span>
+                        <span class="tag">JBoss AS 7</span>
+                    </div>
 
                 </div>
             </li>
@@ -401,9 +430,10 @@
                         their designs by interacting with the code.
                     </p>
 
-                    <p>Initiated, designed, prototyped and implemented programming tools such as the <span
+                    <p>Initiated, designed, prototyped, and implemented programming tools such as the <span
                             style="font-weight: bold; white-space: nowrap;">sketch-correlation</span> tool which
-                        correlates image with code illustrating the intent of each piece of code.
+                        correlates image with code illustrating the intent of each piece
+                        of code.
                     </p>
                     <div class="tag_">
                         <span class="tech">Technologies.</span>
@@ -437,6 +467,7 @@
                         provided a theoretical foundation and implemented novel programming tools tailored to the
                         generative design domain. Those tools were used in an architectural course by more than 60
                         students.
+                    </p>
                     <div class="datespan datecolumn">2010 &mdash; 2013</div>
                     <p><a href="https://tecnico.ulisboa.pt/en/" target="_blank" class="leadtext">IST.</a> BS in
                         Information Systems and Computer Engineering.</p>
