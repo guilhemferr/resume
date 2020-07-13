@@ -11,6 +11,17 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -18,6 +29,11 @@
 
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </head>
 
 <body>
@@ -49,26 +65,10 @@
                         <div id="contact-info" class="pt-2">
                             <div id="contact-1st-row" class="row">
                                 <div class="col pr-0">
-                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                    <a href="https://www.linkedin.com/in/gf3rr3ira" target="_blank">
-                                        <span class="print">https://www.linkedin.com/in/gf3rr3ira</span>
-                                        <span class="screen">linkedin.com/in/gf3rr3ira</span>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                    <a href="tel:+33766275040">
-                                        <span class="print">07 66 27 50 40</span>
-                                        <span class="screen">07 66 27 50 40</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="contact-2nd-row" class="row">
-                                <div class="col pr-0">
                                     <i class="fa fa-github" aria-hidden="true"></i>
                                     <a href="https://github.com/gferr">
                                         <span class="print">https://github.com/gferr</span>
-                                        <span class="screen">github.com/gferr</span>
+                                        <span class="screen">/gferr</span>
                                     </a>
                                 </div>
                                 <div class="col">
@@ -79,25 +79,42 @@
                                     </a>
                                 </div>
                             </div>
+                            <div id="contact-2nd-row" class="row">
+                                <div class="col pr-0">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    <a href="https://www.linkedin.com/in/gferr" target="_blank">
+                                        <span class="print">https://www.linkedin.com/in/gferr</span>
+                                        <span class="screen">/gferr</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                    <a href="tel:+33766275040">
+                                        <span class="print">07 66 27 50 40</span>
+                                        <span class="screen">07 66 27 50 40</span>
+                                    </a>
+                                </div>
+
+                            </div>
                             <div class="print row">
                                 <div class="col">
                                     <p data-translatable>
                                         <span>
                                             <i class="fa fa-pencil-square" aria-hidden="true "></i>
-                                            <time datetime=" " class="text-muted ">
-                                                <span>Last update at July 9, 2020</span>
+                                            <time datetime="2020-07-13T22:49:05+00:00 " class="text-muted ">
+                                                <span>Last update in July 13, 2020</span>
                                             </time>
                                         </span>
                                         <span>
                                             <i class="fa  fa-pencil-square" aria-hidden="true "></i>
-                                            <time datetime=" " class="text-muted ">
-                                                <span>Dernier mise à jour le July 9, 2020</span>
+                                            <time datetime="2020-07-13T22:49:05+00:00 " class="text-muted ">
+                                                <span>Dernier mise à jour le 13/07/2020</span>
                                             </time>
                                         </span>
                                         <span>
                                             <i class="fa  fa-pencil-square" aria-hidden="true "></i>
-                                            <time datetime=" " class="text-muted ">
-                                                <span>Última atualização em July 9, 2020</span>
+                                            <time datetime="2020-07-13T22:49:05+00:00 " class="text-muted ">
+                                                <span>Última atualização em 13/07/2020</span>
                                             </time>
                                         </span>
                                     </p>
@@ -107,21 +124,21 @@
                                 <div class="col pr-0">
                                     <p data-translatable>
                                         <span class="screen">
-                                            <i class="fa fa-file-pdf-o " aria-hidden="true "></i>
+                                            <i class="fa fa-download" aria-hidden="true"></i>
                                             <a href="pdf/guilherme-ferreira_en.pdf ">
-                                                <span>Download PDF</span>
+                                                <span>PDF</span>
                                             </a>
                                         </span>
                                         <span class="screen">
-                                            <i class="fa fa-file-pdf-o " aria-hidden="true "></i>
+                                            <i class="fa fa-download" aria-hidden="true"></i>
                                             <a href="pdf/guilherme-ferreira_fr.pdf ">
-                                                <span>Téléchargez PDF</span>
+                                                <span>PDF</span>
                                             </a>
                                         </span>
                                         <span class="screen">
-                                            <i class="fa fa-file-pdf-o " aria-hidden="true "></i>
+                                            <i class="fa fa-download" aria-hidden="true"></i>
                                             <a href="pdf/guilherme-ferreira_pt.pdf ">
-                                                <span>Descarregar PDF</span>
+                                                <span>PDF</span>
                                             </a>
                                         </span>
                                     </p>
@@ -129,21 +146,24 @@
                                 <div class="screen col">
                                     <p data-translatable>
                                         <span>
-                                            <i class="fa  fa-pencil-square" aria-hidden="true "></i>
-                                            <time datetime=" " class="text-muted ">
-                                                <span>Updated at July 9, 2020</span>
+                                            <i class="fa fa-tag" aria-hidden="true" data-toggle="tooltip"
+                                                data-placement="top" title="Last update"></i>
+                                            <time datetime="2020-07-13T22:49:05+00:00 " class="text-muted ">
+                                                <span>July 13, 2020</span>
                                             </time>
                                         </span>
                                         <span>
-                                            <i class="fa  fa-pencil-square" aria-hidden="true "></i>
-                                            <time datetime=" " class="text-muted ">
-                                                <span>Mise à jour le July 9, 2020</span>
+                                            <i class="fa fa-tag" aria-hidden="true " data-toggle="tooltip"
+                                                data-placement="top" title="Dernière mise à jour"></i>
+                                            <time datetime="2020-07-13T22:49:05+00:00 " class="text-muted ">
+                                                <span>13/07/2020</span>
                                             </time>
                                         </span>
                                         <span>
-                                            <i class="fa  fa-pencil-square" aria-hidden="true "></i>
-                                            <time datetime=" " class="text-muted ">
-                                                <span>Atualizado em July 9, 2020</span>
+                                            <i class="fa fa-tag" aria-hidden="true " data-toggle="tooltip"
+                                                data-placement="top" title="Última atualização"></i>
+                                            <time datetime="2020-07-13T22:49:05+00:00 " class="text-muted ">
+                                                <span>13/07/2020</span>
                                             </time>
                                         </span>
                                     </p>
@@ -192,32 +212,35 @@
                     </div>
 
                     <p><a href="https://aws.amazon.com/fr/campaigns/cloud-migration/" class="leadtext" target="_blank">
-                            AWS Cloud Migration</a>, project driver and lead. Migrated the company infrastruture to the
-                        cloud
-                        currently hosting more than 8 production platforms. Choosed AWS EkS and provided a technical and
-                        finalcial study to support it.
-                        Cuted $400 in the bill replacing the <a
-                            href="https://itnext.io/save-on-your-aws-bill-with-kubernetes-ingress-148214a79dcb"
-                            target="_blank">AWS ELB to NGINX Ingress controler</a>.
+                            AWS Cloud Migration</a>, project driver, and lead. Migrated the company infrastructure to
+                        the cloud. Currently hosting more than 8 production platforms. Chose AWS EKS and provided a
+                        technical and financial study to support my decision. Cut $400 in the bill by implementing a
+                        custom <a href="https://itnext.io/save-on-your-aws-bill-with-kubernetes-ingress-148214a79dcb"
+                            target="_blank">NGINX Ingress to replace the AWS ELB</a>.
                     </p>
                     <p>
-                        Implemented a PaaS solution with CI/CD and similar features as
+                        Implemented a PaaS solution with CI/CD providing similar features as
                         <a href="https://www.liferay.com/fr/products/dxp-cloud" target="_blank">Liferay Cloud
-                            Platform</a>.
-                        Build Liferay images with jib and used circleci to orchestrate the deployments.
-
+                            Platform</a>. Orchestrated the builds and deployments with
+                        <a href="https://circleci.com/" target="_blank">circleci</a>.
+                        Optimized the pipeline execution time and added a notification system to maximize the
+                        developer's productivity. Used
+                        <a href="https://github.com/tazjin/kontemplate/tree/v1.8.0" target="_blank">kontemplate</a> to
+                        set up an isolated namespace where DEV and QA teams can test code changes before integrating into
+                        the main branch.
                     </p>
 
                     <div class="tag_">
                         <span class="tech">Technologies.</span>
-                        <span class="tag">Liferay 7.x</span>
-                        <span class="tag">Springboot</span>
-                        <span class="tag">Java 8</span>
-                        <span class="tag">React / Redux</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">AWS EKS</span>
+                        <span class="tag">Route 53</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Node</span>
+                        <span class="tag">ShellScript</span>
                     </div>
                 </div>
             </li>
-
 
             <!-- beorn -->
             <li class="media">
@@ -227,7 +250,7 @@
                 <div class="media-body pr-3">
                     <div class="datespan row">
                         <div class="col-4">
-                            <span class="datehead">Oct 2018 &mdash; </span>
+                            <span class="datehead">Oct 2018 &mdash; Jan 2019 </span>
                         </div>
                         <div class="col-8 company-info">
                             <span><i class="fa fa-at" aria-hidden="true" style="font-size: larger;"></i>&nbsp;<a
@@ -240,18 +263,19 @@
                     </div>
 
                     <p><a href="https://emploi.preprod.cutm.nfrance.com/" class="leadtext" target="_blank">
-                            Architected and developed Portail Emploi</a>, leaded a team of 5 developers and devilered
-                        the
-                        first MVP version in less than a month.
+                            Architected and developed Portail Emploi</a>, led a team of 5 developers,
+                        and delivered the first MVP version in less than a month.
                     </p>
 
-                    <p>Used <a href="https://www.jhipster.tech/">JHipster</a> to accelarate the deveoplment cycles.
-                        Integrated with <a
+                    <p>Used <a href="https://www.jhipster.tech/" target="_blank">JHipster</a> to accelarate the
+                        deveoplment cycles.
+                        Advocated for the use of
+                        <a href="https://swagger.io/specification/" target="_blank">OpenAPI Specification</a>
+                        on the exposed and consumed APIs such as the
+                        <a
                             href="https://www.emploi-store-dev.fr/portail-developpeur/detailapicatalogue/-offres-d-emploi-v2?id=5ba49d55243a5f9d2c5064a2">emploi
-                            store API</a>
-                        with industry standard Open API. Desined the project APIs to easly split tasks and distribute
-                        the work. Assembled the final project
-                        in a SPA inside Liferay CMS.
+                            store API</a>. Designed and decoupled the project in components to distribute the work.
+                        Assembled the final project in a SPA inside Liferay CMS.
                     </p>
 
                     <div class="tag_">
@@ -337,15 +361,14 @@
 
                     <p><a href="https://www.commerzbank.de/portal/de/privatkunden/startseite.html" target="_blank"
                             class="leadtext">Commerzbank.</a> Designed and implemented the Enterprise Service Bus of a
-                        home banking application that handles 5K+ queries per second. Implemented operations like login, list
-                        statements, upload documents, among others.
+                        home banking application that handles 5K+ queries per second. Implemented operations like login,
+                        list statements, upload documents, among others.
                     </p>
 
                     <p>
                         Implemented a custom <a href="https://en.wikipedia.org/wiki/Two-phase_commit_protocol"
                             target="_blank">two-phase commit protocol</a> to assure that operations like immediate
                         transfers could be performed.
-
                     </p>
 
                     <div class="tag_">
@@ -368,10 +391,8 @@
                 <div class="media-body pr-3">
                     <div class="datespan row">
                         <div class="col-4">
-
                             <span class="datehead">2015 &mdash; 2016</span>
                         </div>
-
 
                         <div class="col-8 company-info">
                             <span><i class="fa fa-at" aria-hidden="true" style="font-size: larger;"></i>&nbsp;<a
