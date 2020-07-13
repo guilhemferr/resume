@@ -19,11 +19,13 @@ fs.ensureDirSync(`${outputDir}/pdf`)
 
 getPdfName = lang => `pdf/${getSlug(templateData.name)}_${lang}.pdf`;
 
-buildHtml = (pdf, lang, dateFormat) => template({
+buildHtml = (pdf, lang) => template({
     ...templateData,
     pdf,
     language: lang,
-    updated: dayjs().format(dateFormat),
+    buildinfo: {
+        machineDate: dayjs().format()
+    }
 });
 
 buildPdf = async function(inputFile, outputFile) {
@@ -59,19 +61,28 @@ handlebars.registerHelper('markdown', markdownHelper);
 const source = fs.readFileSync(srcDir + '/templates/index.html', 'utf-8');
 const template = handlebars.compile(source);
 const pdf = {
-    en: getPdfName('en'),
-    fr: getPdfName('fr'),
-    pt: getPdfName('pt')
+    en: {
+        name: getPdfName('en'),
+        updated: dayjs().format('MMMM D, YYYY')
+    },
+    fr: {
+        name: getPdfName('fr'),
+        updated: dayjs().format('DD/MM/YYYY')
+    },
+    pt: {
+        name: getPdfName('pt'),
+        updated: dayjs().format('DD/MM/YYYY')
+    }
 }
-const html = buildHtml(pdf, 'en', 'MMMM D, YYYY');
+const html = buildHtml(pdf, 'en');
 fs.writeFileSync(outputDir + '/index.html', html);
 // Build PDF
-buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdf.en}`);
+buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdf.en.name}`);
 
-const frHtml = buildHtml(pdf, 'fr', 'DD/MM/YYYY');
+const frHtml = buildHtml(pdf, 'fr');
 fs.writeFileSync(`${outputDir}/index.fr.html`, frHtml);
-buildPdfSync(`${outputDir}/index.fr.html`, `${outputDir}/${pdf.fr}`);
+buildPdfSync(`${outputDir}/index.fr.html`, `${outputDir}/${pdf.fr.name}`);
 
-const ptHtml = buildHtml(pdf, 'pt', 'DD/MM/YYYY');
+const ptHtml = buildHtml(pdf, 'pt');
 fs.writeFileSync(`${outputDir}/index.pt.html`, ptHtml);
-buildPdfSync(`${outputDir}/index.pt.html`, `${outputDir}/${pdf.pt}`);
+buildPdfSync(`${outputDir}/index.pt.html`, `${outputDir}/${pdf.pt.name}`);
