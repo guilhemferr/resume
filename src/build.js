@@ -46,7 +46,7 @@ buildPdf = async function(inputFile, outputFile) {
         },
         displayHeaderFooter: true,
         headerTemplate: "<div/>",
-        footerTemplate: "<div style=\"text-align: right;width: 297mm;font-size: 8px;\"><span style=\"margin-right: 0.8cm\"><span class=\"pageNumber\"></span> of <span class=\"totalPages\"></span></span></div>"
+        footerTemplate: "<div style=\"text-align: right;width: 297mm;font-size: 8px;\"><span style=\"margin-right: 0.8cm;margin-top: 10px\"><span class=\"pageNumber\"></span> of <span class=\"totalPages\"></span></span></div>"
     });
     await browser.close();
 };
