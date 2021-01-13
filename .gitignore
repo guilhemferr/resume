@@ -62,3 +62,5 @@ typings/
 
 # Website dest
 dest
+
+.DS_Store

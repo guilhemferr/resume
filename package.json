@@ -3,7 +3,7 @@
   "description": "The Resume (Curriculum Vitae) Project",
   "scripts": {
     "build": "node src/build.js",
-    "watch": "chokidar '**/*' -i 'dest/**/*' -c 'npm run build'",
+    "watch": "chokidar 'src/**/*' -i 'dest/**/*' -c 'npm run build'",
     "prestart": "npm run build",
     "start": "npm run watch & live-server dest",
     "pregh": "npm run build",
