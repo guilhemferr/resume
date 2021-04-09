@@ -49,8 +49,7 @@ b {
   border: 1px solid #dfe0e2;
   border-radius: 5px;
   background: #f8f8f8;
-  min-height: 18px;
-  padding: 0px 6px 0px;
+  padding: 0 6px 0;
   cursor: default;
   color: #767e8b;
   box-sizing: border-box;
@@ -161,7 +160,7 @@ h3:before {
   color: #aaa;
   font-size: 14px;
   font-family: "Open Sans", helvetica, sans-serif;
-  line-height: 0em;
+  line-height: 0;
   margin-bottom: -3px;
 }
 
@@ -234,7 +233,7 @@ a:hover {
 }
 
 .beforelist {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 img {
@@ -259,14 +258,14 @@ img {
 }
 
 .mt-0 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 time span,
 #contact-info a span,
 #contact-info a {
   color: #777;
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.2em;
   letter-spacing: 0.001em;
   font-family: "Open Sans", helvetica, sans-serif;
@@ -292,7 +291,7 @@ time span,
 }
 
 #subtitle {
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.1em;
   letter-spacing: 0.001em;
   font-family: "Open Sans", helvetica, sans-serif;
@@ -358,7 +357,7 @@ time span,
   .datespan .col-4 {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     line-height: 1em;
   }
 }

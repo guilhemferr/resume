@@ -6,6 +6,14 @@
         line-height: 1.2em;
         text-align: justify;
     }
+    time span,
+    #contact-info a span,
+    #contact-info a {
+        font-size: 13px;
+    }
+    #contact-1st-row {
+        margin-bottom: 4px;
+    }
     .datecolumn {
         margin-bottom: 0 !important;
         line-height: 1.5em !important;
@@ -43,7 +51,7 @@
         padding: 0;
     }
     #subtitle {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     #contact-info {
         padding-top: 0;
