@@ -35,8 +35,6 @@
         });
 
 
-
-
     </script>
 </head>
 
@@ -193,6 +191,7 @@
 
     <h3>Selected Work</h3>
 
+    <!-- beorn -->
     <ul class="list-unstyled">
 
         <li class="media">
@@ -215,11 +214,10 @@
                 <p><a class="leadtext"
                       href="https://www.airbus.com/space/telecommunications-satellites/oneweb-satellites-connection-for-people-all-over-the-globe.html"
                       target="_blank">
-                    Airbus OneWeb Satellites</a>, lead tech, and DevOps. Maintained and evolved the web portal used
-                    by thousands of suppliers worldwide to store and provide data collected from satellites.
-                    Lead the code take-over operation, including audition, and unit testing with line
-                    coverage of <b>95%</b>. Create a dockerized environment that allows the team to work seamlessly.
-                    Added CI/CD pipelines and deployed the portal in a Kubernetes infrastructure.
+                    Airbus OneWeb Satellites</a>, lead software engineer. Maintained and evolved a web platform and
+                    portal used by thousands of suppliers worldwide to store and collect data from satellites. Improved
+                    the overall code quality by adding unit tests with line coverage of <b>95%</b>. Added continuous
+                    integration with CircleCI, Snyk orb, and SonarQube. Deployed the portal continuously with AWS EKS.
                     Work closely with the client helping in the definition of the product road map.
                 </p>
 
@@ -235,7 +233,6 @@
             </div>
         </li>
 
-        <!-- beorn -->
         <li class="media">
             <div class="mr-3 img-padding-top">
                 <img alt="Kubernetes dashboard" src="img/k8s.jpg">
@@ -254,20 +251,18 @@
                 </div>
 
                 <p><a class="leadtext" href="https://aws.amazon.com/fr/campaigns/cloud-migration/" target="_blank">
-                    AWS Cloud Migration</a>, cloud architect and lead. Migrated, from scratch, the company's
-                    infra into the cloud. Currently hosting more than <b>20 platforms</b> among production and UAT.
-                    Chose
-                    <b>AWS EKS</b> and provided a technical and financial study to support my decision. Cut
-                    $400/month in
-                    the bill by implementing a custom
-                    <a href="https://itnext.io/save-on-your-aws-bill-with-kubernetes-ingress-148214a79dcb"
-                       target="_blank">NGINX Ingress to replace the AWS ELB</a>.
+                    AWS Cloud Migration</a>, platform engineer. Migrated, from scratch, the company's infra into the
+                    cloud. Currently hosting more than <b>20+ web platforms</b> among production and UAT. Choose <b>AWS
+                        EKS</b> and provided a technical and financial study to support my decision. Cut $400/month in
+                    the bill by implementing a custom <a
+                        href="https://itnext.io/save-on-your-aws-bill-with-kubernetes-ingress-148214a79dcb"
+                        target="_blank">NGINX Ingress to replace the AWS ELB</a>.
                 </p>
                 <p>
                     Implemented a PaaS solution with <b>CI/CD</b> providing similar features as
                     <a href="https://www.liferay.com/fr/products/dxp-cloud" target="_blank">Liferay Cloud
                         Platform</a>. Orchestrated the builds and deployments with
-                    <a href="https://circleci.com/" target="_blank">circleci</a>.
+                    <a href="https://circleci.com/" target="_blank">CircleCI</a>.
                     Optimized the pipeline execution time and added a notification system that maximizes the
                     developer's productivity. Used
                     <a href="https://github.com/tazjin/kontemplate/tree/v1.8.0" target="_blank">kontemplate</a> to
@@ -305,7 +300,7 @@
                 </div>
 
                 <p><a class="leadtext" href="https://emploi.preprod.cutm.nfrance.com/" target="_blank">
-                    Portail Emploi</a>, architect and tech lead. Managed a team of 5+ developers, among
+                    Portail Emploi</a>, lead software engineer. Managed a team of 5+ developers, among
                     freelancers and internals, and delivered the first MVP version in less than a month.
                 </p>
 
@@ -315,7 +310,7 @@
                     on the exposed and consumed APIs such as the
                     <a
                         href="https://www.emploi-store-dev.fr/portail-developpeur/detailapicatalogue/-offres-d-emploi-v2?id=5ba49d55243a5f9d2c5064a2">emploi
-                        store API</a>.Decoupled the project in smaller components, distributed them, and assured the
+                        store API</a>. Decoupled the project in smaller components, distributed them, and assured the
                     quality of the work produced. Assembled the final project in a <b>SPA</b> inside Liferay CMS.
                 </p>
 
@@ -355,7 +350,7 @@
 
                 <p>
                     Created a dedicated frontend in AngularJS that manages the jobs posted through a Facebook group.
-                    Increased the number of users by 96% using oauth2 protocol (login with FB). Used a nodeJS
+                    Increased the number of users by 96% using oauth2 protocol (login with FB). Used a NodeJS
                     with typescript running on top of expressjs as a backend server and integrated with
                     <a href="https://developers.facebook.com/docs/graph-api" target="_blank">Graph API</a> to fetch
                     user information. Used
@@ -366,7 +361,7 @@
                 <div class="tag_">
                     <span class="tech">Technologies.</span>
                     <span class="tag">NodeJS</span>
-                    <span class="tag">AngularJS</span>
+                    <span class="tag">Typescript</span>
                     <span class="tag">Facebook Graph API</span>
                     <span class="tag">AWS Cognito</span>
                     <span class="tag">MongoDB</span>
@@ -395,7 +390,7 @@
                 </div>
 
                 <p><a class="leadtext" href="https://www.mercedes-benz.de/" target="_blank">Mercedes-Benz.io</a>
-                    Lead developer, mainteined and evolved the <a
+                    Lead developer, maintained and evolved the <a
                         href="https://www.mercedes-benz.de/content/germany/de/passengercars/mercedes-benz-cars/test-drive.html#/model">
                         Test Drive Application</a>. Reduced the leads lost rate to under zero implementing
                     fault tolerance and asynchronous processing mechanism with RabbitMQ and Amazon SES. Reduced the
@@ -629,22 +624,22 @@
 
 <script src="js/dom-i18n.min.js "></script>
 <script>
-        var i18n = domI18n({
-            selector: '[data-translatable]',
-            separator: ' // ',
-            languages: ['en', 'fr', 'pt'],
-            defaultLanguage: 'en',
-            currentLanguage: "{{ language }} "
-        });
+    var i18n = domI18n({
+        selector: '[data-translatable]',
+        separator: ' // ',
+        languages: ['en', 'fr', 'pt'],
+        defaultLanguage: 'en',
+        currentLanguage: "{{ language }} "
+    });
 
-        var nav = Array.prototype.slice.call(document.querySelectorAll('#nav > a'));
+    var nav = Array.prototype.slice.call(document.querySelectorAll('#nav > a'));
 
-        nav.forEach(function (item) {
-            item.onclick = function (e) {
-                i18n.changeLanguage(this.getAttribute('data-lang-ref'));
-                e.preventDefault();
-            };
-        });
+    nav.forEach(function (item) {
+        item.onclick = function (e) {
+            i18n.changeLanguage(this.getAttribute('data-lang-ref'));
+            e.preventDefault();
+        };
+    });
 
 </script>
 
