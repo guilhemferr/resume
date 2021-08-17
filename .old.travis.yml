@@ -1,10 +1,5 @@
 language: node_js
 node_js:
-- node
+  - node
 cache: npm
 script: npm run gh -- -r https://$GITHUB_TOKEN@github.com/gferr/resume.git
-#deploy:
-#  provider: script
-#  script: npm run gh
-#  on:
-#    branch: master
