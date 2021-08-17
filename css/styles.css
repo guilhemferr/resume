@@ -1,15 +1,15 @@
 @media print {
     body {
-        font-size: 18px;
+        font-size: 12pt;
         color: #777;
         background: #fff;
-        line-height: 1.2em;
-        text-align: justify;
+        line-height: 1.25em;
+        font-family: 'Merriweather', serif;
     }
     time span,
     #contact-info a span,
     #contact-info a {
-        font-size: 13px;
+        font-size: 10pt;
     }
     #contact-1st-row {
         margin-bottom: 4px;
@@ -42,6 +42,12 @@
     a {
         text-decoration: none !important;
     }
+    ul.itemize li:not(:last-child) {
+        margin-bottom: 2pt;
+    }
+    ul.itemize {
+        margin-left: 14pt;
+    }
     h1 {
         font-weight: 300;
     }
@@ -58,11 +64,11 @@
         color: #777;
     }
     #contact-info a {
-        font-size: 13.5px;
+        font-size: 12pt;
     }
     #contact-info .fa {
         color: #c5c5c5;
-        font-size: 18px;
+        font-size: 14pt;
         vertical-align: middle;
     }
     #contact-2nd-row {
