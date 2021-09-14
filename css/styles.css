@@ -77,6 +77,9 @@
     code {
         font-size: 1rem;
     }
+    .list-unstyled .media {
+        margin-bottom: 1rem;
+    }
 }
 
 @media not print {
