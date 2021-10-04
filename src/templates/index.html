@@ -58,8 +58,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8 col-print-8">
             <div class="media">
-                <div class="square mr-3">
+                <div class="screen square mr-3">
                     <img alt="profile image" src="img/profile-gray.png">
+                </div>
+                <div class="print mr-2 ml-5" style="height: 120px; width: 20px;">
+                    <img alt="profile" src="img/rectangle.png" style="border-radius: 4px;">
                 </div>
                 <div class="media-body ">
                     <h1 class="mt-0">{{ name }}</h1>
@@ -220,8 +223,8 @@
                    target="_blank">
                     BlaBlaCar</a>, Software Engineer <i>(Engage Team)</i>
                 <ul class="itemize">
-                    <li>Managing carpool domain events which allow notifying users (by SMS, email, push) of their trip
-                        in an application used by 100M members.
+                    <li>Used the visitor pattern to reduce coupling in the Kafka consumer, which reduced the time to add
+                        a new event handler by half.
                     </li>
                 </ul>
 
@@ -262,8 +265,8 @@
                         automatically during deployments, resulting in an 85% reduction of prod incidents.
                     </li>
                     <li>Built a formal language on top of Java using <a href="https://www.antlr.org/" target="_blank">ANTLR</a>.
-                        Used the visitor pattern to process AST nodes by executing SQL statements, calling RESTful APIs,
-                        or running Groovy scripts.
+                        Processed the AST nodes by executing SQL statements, calling RESTful APIs, or running Groovy
+                        scripts.
                     </li>
                     <li>Detected and rewrote slow SQL queries to use batch updates, which reduced the execution time by
                         3.5x.
